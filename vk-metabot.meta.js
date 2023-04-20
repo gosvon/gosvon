@@ -2,7 +2,7 @@
 // @name         GosVon Marking for VK
 // @namespace    vk-metabot-user-js
 // @description  Подсветка служебных страниц вконтакте.
-// @version      3.01
+// @version      3.02
 // @homepageURL  https://vk.com/club187686148
 // @match        https://*.vk.com/*
 // @match        *://web.archive.org/*://*vk.com/*
