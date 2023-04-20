@@ -9,8 +9,9 @@
 // @exclude      *://queuev4.vk.com/*
 // @connect      api.gosvon.net
 // @connect      script.gosvon.net
-// @updateURL    https://api.gosvon.net/update/vk-metabot.meta.js
-// @downloadURL  https://api.gosvon.net/update/vk-metabot.user.js
+// @connect      *://raw.githubusercontent.com
+// @updateURL    https://raw.githubusercontent.com/gosvon/gosvon/main/vk-metabot.meta.js
+// @downloadURL  https://raw.githubusercontent.com/gosvon/gosvon/main/vk-metabot.user.js
 // @grant        GM_xmlhttpRequest
 // @grant        GM.xmlHttpRequest
 // @grant        GM_setValue
