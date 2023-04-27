@@ -2,16 +2,18 @@
 // @name         GosVon Marking for VK
 // @namespace    vk-metabot-user-js
 // @description  Подсветка служебных страниц вконтакте.
-// @version      3.02
+// @version      3.03
 // @homepageURL  https://vk.com/club187686148
 // @match        https://*.vk.com/*
 // @match        *://web.archive.org/*://*vk.com/*
 // @exclude      *://queuev4.vk.com/*
+// @connect      gosvon.net
 // @connect      api.gosvon.net
-// @connect      script.gosvon.net
-// @connect      *://raw.githubusercontent.com
-// @updateURL    https://raw.githubusercontent.com/gosvon/gosvon/main/vk-metabot.meta.js
-// @downloadURL  https://raw.githubusercontent.com/gosvon/gosvon/main/vk-metabot.user.js
+// @connect      gosvon.github.io
+// @connect      *.vercel.app
+// @connect      *.netlify.app
+// @updateURL    https://raw.githubusercontent.com/gosvon/gosvon/user-script/vk-metabot.meta.js
+// @downloadURL  https://raw.githubusercontent.com/gosvon/gosvon/user-script/vk-metabot.user.js
 // @grant        GM_xmlhttpRequest
 // @grant        GM.xmlHttpRequest
 // @grant        GM_setValue
@@ -21,26 +23,26 @@
 // ==/UserScript==
 (() => {
     var __webpack_modules__ = {
-        192: (module, __webpack_exports__, __webpack_require__) => {
+        512: (module, __webpack_exports__, __webpack_require__) => {
             "use strict";
             __webpack_require__.d(__webpack_exports__, {
                 Z: () => __WEBPACK_DEFAULT_EXPORT__
             });
-            var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(81);
-            var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = __webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-            var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(645);
-            var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = __webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-            var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(667);
-            var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = __webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+            var _node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(67);
+            var _node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = __webpack_require__.n(_node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+            var _node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(887);
+            var _node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = __webpack_require__.n(_node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+            var _node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(822);
+            var _node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = __webpack_require__.n(_node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
             var ___CSS_LOADER_URL_IMPORT_0___ = new URL(__webpack_require__(591), __webpack_require__.b);
             var ___CSS_LOADER_URL_IMPORT_1___ = new URL(__webpack_require__(190), __webpack_require__.b);
-            var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default());
-            var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
-            var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
+            var ___CSS_LOADER_EXPORT___ = _node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()(_node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default());
+            var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+            var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
             ___CSS_LOADER_EXPORT___.push([ module.id, '.gosvon-reset-color-btn{border:0;border-radius:50%;margin-left:5px;height:20px;margin-top:3px;cursor:pointer;width:20px;transition:all .2s;opacity:.6}.gosvon-reset-color-btn:hover{opacity:.8}.gosvon-reset-color-btn:active{opacity:1}.gosvon-type-checkbox{display:flex;margin-bottom:2px}.gosvon-type-checkbox__label{margin-bottom:10px;width:180px}.gosvon-type-color{height:22px;border:0;cursor:pointer}.gosvon-type-name{width:180px}.gosvon-settings-modal{top:0;position:fixed;display:flex;flex-direction:column;justify-content:center;overflow:auto;z-index:1000;width:100%;height:100%}.gosvon-settings-modal-close{position:relative;float:right;padding:15px 20px 15px 15px;width:24px;height:24px;opacity:75%;color:var(--icon_medium);cursor:pointer;outline:0}.gosvon-settings-modal-title-wrap,.gosvon-advanced-menu-modal-permissions-denied-title-wrap{position:relative;padding:0;background-color:var(--background_light);color:var(--vkui--color_text_primary);border-bottom:1px solid var(--separator_common);border-radius:var(--vkui--size_border_radius_paper--regular, 8px) var(--vkui--size_border_radius_paper--regular, 8px) 0 0}.gosvon-settings-modal-title,.gosvon-advanced-menu-modal-permissions-denied-title{padding-left:25px;font-size:14px;color:var(--vkui--color_text_primary);height:54px;line-height:54px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.gosvon-settings-container{width:100%;max-width:650px;box-shadow:0 2px 10px var(--black_alpha40);margin:20px auto}.gosvon-settings-modal-types{width:300px;overflow-y:scroll;padding-top:5px;padding-bottom:5px}.gosvon-settings-modal-marks{width:270px;height:273px;overflow-y:scroll;padding-top:5px;padding-bottom:5px}@keyframes glowing{0%{width:40px;height:40px;box-shadow:0 0 10px #f99,0 0 5px #f99;border:2px solid #f99}50%{width:30px;height:30px;box-shadow:0 0 10px #f99,0 0 5px #f99;border:2px solid #f99}100%{width:40px;height:40px;box-shadow:0 0 10px #f99,0 0 5px #f99;border:2px solid #f99}}.gosvon-replies-collecting-enabled-automatically{position:relative}.gosvon-replies-collecting-enabled-automatically::after{content:"";display:block;position:absolute;top:50%;left:50%;border-radius:50%;transform:translate(-50%, -50%);animation:glowing 1s 5;user-select:none}.gosvon-checkbox{display:flex;align-items:center;cursor:pointer;line-height:1.27em}.gosvon-checkbox input{display:none}.gosvon-checkbox input+.gosvon-checkbox-view{display:block;float:left;background-image:url(' + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");background-position:center;background-repeat:no-repeat;margin:0 7px 0 0;width:16px;height:16px;margin-top:-1px}.gosvon-checkbox input:checked+.gosvon-checkbox-view{background-image:url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ")}.gosvon-checkbox input:disabled+.gosvon-checkbox-view{filter:contrast(0)}.gosvon-checkbox:has(input:disabled){cursor:default}.gosvon-token-field-wrapper{margin-bottom:15px}.gosvon-token-line{position:relative;display:flex;flex-wrap:wrap;align-items:center;margin-bottom:5px;column-gap:10px}.gosvon-token-form-line{position:relative;display:flex;align-items:center;margin-bottom:5px}.gosvon-token-input-line{position:relative;display:flex;align-items:center;flex-wrap:wrap}.gosvon-token-field{box-sizing:border-box;display:block;padding:6px;height:33px;width:300px;font-family:monospace;border:1px solid #000;border-radius:3px}.gosvon-token-description{font-size:12px;color:var(--text_primary)}.gosvon-token-btn{position:absolute;top:4px;padding:0;height:25px;width:25px;border:1px solid #000;border-radius:3px;cursor:pointer}.gosvon-token-show-btn{right:34px}.gosvon-token-show-btn svg{width:16px;height:16px;vertical-align:middle;color:inherit;display:inline-block;fill:var(--vkui--color_text_primary)}.gosvon-token-clear-btn{right:4px}.gosvon-token-error{color:red}.gosvon-token-check-btn{box-sizing:border-box;height:33px;margin-left:5px;border:1px solid #000;border-radius:3px}.gosvon-token-info{position:relative;top:-3px}.gosvon-settings-content,.gosvon-advanced-menu-modal-permissions-denied-description{padding:20px 25px;line-height:19px;overflow:auto;background-color:var(--background_light)}.gosvon-settings-content{height:450px}.gosvon-settings-modal-mobile{background:var(--background_content);overflow:auto}.gosvon-settings-modal-mobile .gosvon-settings-container{margin-top:0;height:unset}.gosvon-settings-modal-mobile .gosvon-settings-content{background:var(--background_content);height:unset}.gosvon-settings-modal-mobile .gosvon-settings-modal-hidden-mobile{display:none}.gosvon-settings-modal-mobile .gosvon-token-field{width:unset}.gosvon-settings-modal-mobile .gosvon-settings-modal-title-wrap{border-radius:0}.gosvon-settings-modal-checkboxes{display:flex;gap:10px;flex-wrap:wrap}.gosvon-advanced-menu-modal{position:fixed;top:0;left:0;bottom:0;right:0;z-index:9999;transition:all .2s;display:flex;flex-wrap:nowrap;flex-direction:row;align-items:safe center;justify-content:center}.gosvon-advanced-menu-modal-clickout-listener{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.4)}.gosvon-advanced-menu-modal-close{display:flex;justify-content:center;align-items:center;background:var(--background_light);border-radius:50px;position:absolute;right:10px;padding:10px;top:8px;height:45px;width:45px;cursor:pointer;box-sizing:border-box;transition:opacity .2s}.gosvon-advanced-menu-modal-close:hover{background:var(--background_hover)}.gosvon-advanced-menu-modal-content{position:relative;z-index:1;width:500px}.gosvon-advanced-menu-modal-content-mount{height:370px}#wk_likes_content{padding:20px}.gosvon-fan-table{width:100%;border-collapse:collapse}.gosvon-fan-table td{padding:0;border:1px solid rgba(0,0,0,.1882352941)}.gosvon-fan-table .gosvon-avatar{margin-right:3px;display:flex;align-items:center}.gosvon-fan-table .gosvon-name{display:flex;align-items:center}.gosvon-fan-table .gosvon-avatar img{transition:all .2s;pointer-events:none}.gosvon-fan-table .gosvon-avatar:hover img{transform:scale(10)}.bot-mark-or-type{position:absolute;left:60px;bottom:5px;font-size:10px;color:#000}.gosvon-profile-registration-date{opacity:.5;text-align:center}.gosvon-mobile-profile-bot-info{text-align:center;z-index:12;position:relative}.gosvon-reg-date{opacity:.5}.gosvon-mobile-reply-line{display:inline-block}.gosvon-desktop-fan{text-align:center;position:absolute;top:50%;transform:translateY(calc(-50% - 30px));left:0;width:100%;opacity:.7;color:#000}.gosvon-settings-mark{display:block;margin-bottom:10px}.gosvon-post-header{border-left:3px solid rgba(255,50,50,.3);padding-bottom:5px !important;padding-top:10px !important}.gosvon-post-line-old-design{display:inline-block;margin-top:5px;margin-bottom:5px}.gosvon-post-line{display:inline-block;margin-top:5px;margin-bottom:5px}.r .gosvon-post-mobile-header.wi_head{padding:5px !important;padding-top:17px !important}.gosvon-reply-form-btn{position:absolute;right:90px;background:0;border:0;top:2px;height:25px;width:25px;fill:#994168;padding:3px;cursor:pointer}.gosvon-profile-line{margin-top:5px;margin-bottom:5px}.gosvon-reply-actions{display:flex;align-items:center}.gosvon-reply-mobile-actions{display:inline-flex;align-items:center;transform:translate(0, 6px)}.gosvon-reply-action{margin-left:8px;overflow:visible;max-height:1em;height:16px;width:16px;visibility:hidden;fill:var(--vkui--color_text_primary)}@media(hover: none){.reply .gosvon-reply-action{visibility:visible;opacity:.5}}.reply:hover .gosvon-reply-action{visibility:visible;opacity:.5}.gosvon-reply-action:hover{opacity:.4}.gosvon-reply-mobile-action{margin-left:12px;overflow:visible;max-height:1em;height:21px;width:21px;opacity:.4;margin-top:-10px;fill:var(--vkui--color_text_primary)}.gosvon-replies-collecting-description{width:21px;height:21px;fill:var(--text_link);transform:translateX(5px)}.gosvon-reply-content-from-bot{margin-top:-2px;padding-top:2px;margin-right:-2px;padding-right:2px;margin-bottom:-5px;padding-bottom:5px;border-left:3px solid rgba(255,50,50,.3);padding-left:2px}.gosvon-reply-mark-or-type{padding-left:2px;padding-right:2px;color:var(--gray_400)}.gosvon-user-info-wrapper{height:100%;width:100%}.gosvon-notification{position:fixed;left:50px;bottom:20px;z-index:1501;background:rgba(0,0,0,.8);width:300px;padding:16px;color:#fff;border-radius:5px}@media(max-width: 800px){.gosvon-notification{left:10px;bottom:10px}}.gosvon-notification-logo{display:flex;align-items:center;font-size:10px;gap:10px;margin-bottom:10px}.gosvon-notification-close{position:absolute;right:5px;top:5px;opacity:.7;transition:all .2s;font-size:20px;font-weight:bold;display:flex;align-items:center;justify-content:center;height:25px;width:25px;cursor:pointer}.gosvon-notification-close:hover{opacity:1}.gosvon-notification-title{margin-bottom:10px;font-weight:bold}.gosvon-notification-text a{color:#54abff}.gosvon-mark-chip{padding:3px 6px;background:#000;border-radius:3px;color:#fff;margin-right:10px}.vkui--vkBase--dark .gosvon-mark-chip{background:#894646}.gosvon-highlight-overlay{position:absolute;width:100%;height:100%;pointer-events:none;top:0;left:0;opacity:.4}.gosvon-ib{display:inline-block}.gosvon-flex{display:flex}.gosvon-w-full{width:100%}.gosvon-tac{text-align:center}.gosvon-mono{font-family:monospace}.gosvon-mb-40{margin-bottom:30px}.gosvon-mb-30{margin-bottom:30px}.gosvon-mb-20{margin-bottom:20px}.gosvon-mb-10{margin-bottom:10px}.gosvon-mt-10{margin-top:10px}.gosvon-mt-40{margin-top:40px}.gosvon-mr-20{margin-right:20px}", "" ]);
             const __WEBPACK_DEFAULT_EXPORT__ = ___CSS_LOADER_EXPORT___;
         },
-        645: module => {
+        887: module => {
             "use strict";
             /*
   MIT License http://www.opensource.org/licenses/mit-license.php
@@ -121,7 +123,7 @@
                 return list;
             };
         },
-        667: module => {
+        822: module => {
             "use strict";
             module.exports = function(url, options) {
                 if (!options) {
@@ -143,34 +145,34 @@
                 return url;
             };
         },
-        81: module => {
+        67: module => {
             "use strict";
             module.exports = function(i) {
                 return i[1];
             };
         },
-        208: module => {
+        473: module => {
             module.exports = '<svg xmlns="http://www.w3.org/2000/svg" id="mdi-account-arrow-left-outline" viewBox="0 0 24 24"><path d="M17 18H21V16H17V14L14 17L17 20V18M11 4C8.8 4 7 5.8 7 8S8.8 12 11 12 15 10.2 15 8 13.2 4 11 4M11 6C12.1 6 13 6.9 13 8S12.1 10 11 10 9 9.1 9 8 9.9 6 11 6M11 13C8.3 13 3 14.3 3 17V20H12.5C12.2 19.4 12.1 18.8 12 18.1H4.9V17C4.9 16.4 8 14.9 11 14.9C11.5 14.9 12 15 12.5 15C12.8 14.4 13.1 13.8 13.6 13.3C12.6 13.1 11.7 13 11 13" /></svg>';
         },
-        495: module => {
+        117: module => {
             module.exports = '<svg xmlns="http://www.w3.org/2000/svg" id="mdi-account-box-outline" viewBox="0 0 24 24"><path d="M19,19H5V5H19M19,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M16.5,16.25C16.5,14.75 13.5,14 12,14C10.5,14 7.5,14.75 7.5,16.25V17H16.5M12,12.25A2.25,2.25 0 0,0 14.25,10A2.25,2.25 0 0,0 12,7.75A2.25,2.25 0 0,0 9.75,10A2.25,2.25 0 0,0 12,12.25Z" /></svg>';
         },
-        133: module => {
+        388: module => {
             module.exports = '<svg xmlns="http://www.w3.org/2000/svg" id="mdi-calendar-month-outline" viewBox="0 0 24 24"><path d="M7 11H9V13H7V11M21 5V19C21 20.11 20.11 21 19 21H5C3.89 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H6V1H8V3H16V1H18V3H19C20.11 3 21 3.9 21 5M5 7H19V5H5V7M19 19V9H5V19H19M15 13V11H17V13H15M11 13V11H13V13H11M7 15H9V17H7V15M15 17V15H17V17H15M11 17V15H13V17H11Z" /></svg>';
         },
-        102: module => {
+        548: module => {
             module.exports = '<svg xmlns="http://www.w3.org/2000/svg" id="mdi-eye-outline" viewBox="0 0 24 24"><path d="M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M12,4.5C17,4.5 21.27,7.61 23,12C21.27,16.39 17,19.5 12,19.5C7,19.5 2.73,16.39 1,12C2.73,7.61 7,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C15.76,17.5 19.17,15.36 20.82,12C19.17,8.64 15.76,6.5 12,6.5C8.24,6.5 4.83,8.64 3.18,12Z" /></svg>';
         },
-        914: module => {
+        373: module => {
             module.exports = '<svg xmlns="http://www.w3.org/2000/svg" id="mdi-information-slab-box-outline" viewBox="0 0 24 24"><path d="M11 9H13V7H11V9M14 17V15H13V11H10V13H11V15H10V17H14M5 3H19C20.1 3 21 3.89 21 5V19C21 19.53 20.79 20.04 20.41 20.41C20.04 20.79 19.53 21 19 21H5C4.47 21 3.96 20.79 3.59 20.41C3.21 20.04 3 19.53 3 19V5C3 3.89 3.89 3 5 3M19 19V5H5V19H19Z" /></svg>';
         },
-        64: module => {
+        142: module => {
             module.exports = '<svg xmlns="http://www.w3.org/2000/svg" id="mdi-information" viewBox="0 0 24 24"><path d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>';
         },
-        70: module => {
+        158: module => {
             module.exports = '<svg xmlns="http://www.w3.org/2000/svg" id="mdi-list-box-outline" viewBox="0 0 24 24"><path d="M11 15H17V17H11V15M9 7H7V9H9V7M11 13H17V11H11V13M11 9H17V7H11V9M9 11H7V13H9V11M21 5V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H19C20.1 3 21 3.9 21 5M19 5H5V19H19V5M9 15H7V17H9V15Z" /></svg>';
         },
-        379: module => {
+        95: module => {
             "use strict";
             var stylesInDOM = [];
             function getIndexByIdentifier(identifier) {
@@ -255,7 +257,7 @@
                 };
             };
         },
-        569: module => {
+        545: module => {
             "use strict";
             var memo = {};
             function getTarget(target) {
@@ -281,7 +283,7 @@
             }
             module.exports = insertBySelector;
         },
-        216: module => {
+        919: module => {
             "use strict";
             function insertStyleElement(options) {
                 var element = document.createElement("style");
@@ -291,7 +293,7 @@
             }
             module.exports = insertStyleElement;
         },
-        565: (module, __unused_webpack_exports, __webpack_require__) => {
+        855: (module, __unused_webpack_exports, __webpack_require__) => {
             "use strict";
             function setAttributesWithoutAttributes(styleElement) {
                 var nonce = true ? __webpack_require__.nc : 0;
@@ -301,7 +303,7 @@
             }
             module.exports = setAttributesWithoutAttributes;
         },
-        795: module => {
+        17: module => {
             "use strict";
             function apply(styleElement, options, obj) {
                 var css = "";
@@ -356,7 +358,7 @@
             }
             module.exports = domAPI;
         },
-        589: module => {
+        825: module => {
             "use strict";
             function styleTagTransform(css, styleElement) {
                 if (styleElement.styleSheet) {
@@ -524,7 +526,8 @@
                 types,
                 marks,
                 wallsIdsWithDisabledReplyCollecting: createIDTrueMap(rawConfig.wall_skips),
-                message: rawConfig.message
+                message: rawConfig.message,
+                proxy: rawConfig.proxy
             };
         }
         const stateCache = UserCache_createStorageValueMigrator({
@@ -533,39 +536,41 @@
                 botListVersion: "0",
                 types: [],
                 marks: [],
-                wallsIdsWithDisabledReplyCollecting: {}
+                wallsIdsWithDisabledReplyCollecting: {},
+                proxy: ""
             },
             migrations: [ s => ({
                 ...s,
                 wallsIdsWithDisabledReplyCollecting: {}
+            }), s => ({
+                ...s,
+                proxy: ""
             }) ]
         });
-        async function configStoreFactory() {
+        async function configStoreFactory(DI) {
             const state = stateCache.get();
             console.log("GosVon. Конфиг по умолчанию", JSON.parse(JSON.stringify(state)), gmUtils);
             async function saveState() {
                 stateCache.set(state);
             }
             async function fetchConfig() {
-                try {
-                    const responseText = await gmUtils.http({
-                        url: "https://api.gosvon.net/marking3/main"
-                    });
-                    const parsedConfig = processRawConfig(JSON.parse(responseText));
-                    console.log("GosVon: Получен новый конфиг", parsedConfig);
-                    Object.assign(state, parsedConfig);
-                    saveState();
-                } catch {
+                const urls = [ "https://api.gosvon.net/marking3/main", "https://gosvon.github.io/gosvon/main" ];
+                let shouldUseProxyAsMainHost = false;
+                for (const url of urls) {
                     try {
                         const responseText = await gmUtils.http({
-                            url: "https://raw.githubusercontent.com/gosvon/gosvon/main/main"
+                            url
                         });
                         const parsedConfig = processRawConfig(JSON.parse(responseText));
                         console.log("GosVon: Получен новый конфиг", parsedConfig);
                         Object.assign(state, parsedConfig);
                         saveState();
+                        if (shouldUseProxyAsMainHost) {
+                            DI.host = state.proxy;
+                        }
+                        return;
                     } catch (e) {
-                        console.warn("GosVon: Не удалось получить новый конфиг", e);
+                        shouldUseProxyAsMainHost = true;
                     }
                 }
             }
@@ -580,22 +585,16 @@
         async function botListsFactory(DI) {
             let botList = [];
             async function fetchBotList() {
-                try {
-                    const responseText = await gmUtils.http({
-                        url: "https://api.gosvon.net/marking3/list"
-                    });
-                    return JSON.parse(responseText);
-                } catch {
+                const urls = [ "https://api.gosvon.net/marking3/list", "https://gosvon.github.io/gosvon/list" ];
+                for (const url of urls) {
                     try {
                         const responseText = await gmUtils.http({
-                            url: "https://raw.githubusercontent.com/gosvon/gosvon/main/list"
+                            url
                         });
                         return JSON.parse(responseText);
-                    } catch {
-                        console.warn("GosVon: Не удалось получить новый список аккаунтов");
-                        return null;
-                    }
+                    } catch (e) {}
                 }
+                return null;
             }
             function saveBotList(rawBotList) {
                 gmUtils.setStorageValue("botHighlighterSavedBotList", JSON.stringify(rawBotList));
@@ -902,8 +901,9 @@
                 state.iframeEl?.contentWindow?.postMessage(JSON.stringify({
                     ...data,
                     token: DI.tokenStore.state.userToken,
-                    tokenLevel: DI.tokenStore.state.tokenLevel
-                }), "https://script.gosvon.net/AdvMenu/");
+                    tokenLevel: DI.tokenStore.state.tokenLevel,
+                    host: DI.host
+                }), "MISSING_ENV_VAR".ADVANCED_MENU_IFRAME_SRC || `${DI.host}/script/AdvMenu/`);
             };
             return {
                 saveModalElement,
@@ -987,7 +987,7 @@
                         sendingData
                     });
                     const response = await gmUtils.http({
-                        url: `https://script.gosvon.net/get.php?code=${DI.tokenStore.state.userToken}`,
+                        url: `${DI.host}/script/?code=${DI.tokenStore.state.userToken}`,
                         method: "POST",
                         data: JSON.stringify(sendingData)
                     });
@@ -1104,7 +1104,7 @@
                 })));
                 try {
                     const responseText = await gmUtils.http({
-                        url: `https://script.gosvon.net/?code=${checkingToken}&t=getMe`
+                        url: `${DI.host}/script/?code=${checkingToken}&t=getMe`
                     });
                     console.log("GosVon. Проверка кода:", responseText);
                     const parsed = JSON.parse(responseText);
@@ -1187,10 +1187,11 @@
             registrationDates: {},
             advancedMenuStore: {},
             replyCollector: {},
-            tokenStore: {}
+            tokenStore: {},
+            host: "https://gosvon.net"
         };
         async function getDIReady() {
-            DI.config = await configStoreFactory();
+            DI.config = await configStoreFactory(DI);
             DI.userSettings = userSettingsFactory(DI);
             DI.tokenStore = tokenStoreFactory(DI);
             if (!DI.config.state.botListVersion) {
@@ -1303,8 +1304,8 @@
         function injectAdvancedUserInfoModal() {
             const modalEl = createLayoutFromString(`\n    <div\n      class="gosvon-advanced-menu-modal"\n      style="\n        pointer-events: none;\n        opacity: 0;\n      "\n    >\n      <div class="gosvon-advanced-menu-modal-clickout-listener"></div>\n\n      <div class="gosvon-advanced-menu-modal-content">\n        <div class="gosvon-advanced-menu-modal-content-mount"></div>\n        <div\n          class="gosvon-advanced-menu-modal-close"\n          aria-label="Закрыть"\n          tabindex="0"\n          role="button"\n        >\n          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">\n            <g id="cancel_24__Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n                <g id="cancel_24__cancel_24">\n                  <path d="M0 0h24v24H0z"></path>\n                  <path d="M18.3 5.7a.99.99 0 00-1.4 0L12 10.6 7.1 5.7a.99.99 0 00-1.4 1.4l4.9 4.9-4.9 4.9a.99.99 0 001.4 1.4l4.9-4.9 4.9 4.9a.99.99 0 001.4-1.4L13.4 12l4.9-4.9a.99.99 0 000-1.4z" id="cancel_24__Mask" fill="currentColor">\n                  </path>\n                </g>\n            </g>\n          </svg>\n        </div>\n      </div>\n    </div>\n  `);
             const contentMountEl = modalEl.querySelector(".gosvon-advanced-menu-modal-content-mount");
-            const iframeEl = createLayoutFromString(`\n    <iframe\n      src="${"https://script.gosvon.net/AdvMenu/"}"\n      width="100%"\n      height="100%"\n      frameBorder="0"\n      class="\n        gosvon-menu-wrapper\n      "\n    ></iframe>\n  `);
-            const permissionDeniedEl = createLayoutFromString(`\n    <div class="gosvon-advanced-menu-modal-permissions-denied">\n      <div class="gosvon-advanced-menu-modal-permissions-denied-title-wrap">\n        <div class="gosvon-advanced-menu-modal-permissions-denied-title">\n          Ловушка Повара — Инспектор\n        </div>\n      </div>\n      <div class="gosvon-advanced-menu-modal-permissions-denied-description">\n        Чтобы открыть <a target="_blank" href="https://gosvon.net/help/#inspector">инспектор</a>, необходимо иметь код и специальный уровень доступа, которые вы можете получить через нашего бота в&nbsp;Телеграме: <a target="_blank" href="https://t.me/GosvonBot/">t.me/GosvonBot</a>.\n        <br><br>\n        Код необходимо ввести <a class="gosvon-advanced-menu-modal-settings-link">в&nbsp;настройках&nbsp;скрипта</a>.\n      </div>\n    </div>\n  `);
+            const iframeEl = createLayoutFromString(`\n    <iframe\n      src="${"MISSING_ENV_VAR".ADVANCED_MENU_IFRAME_SRC || `${src_DI.host}/script/AdvMenu/`}"\n      width="100%"\n      height="100%"\n      frameBorder="0"\n      class="\n        gosvon-menu-wrapper\n      "\n    ></iframe>\n  `);
+            const permissionDeniedEl = createLayoutFromString(`\n    <div class="gosvon-advanced-menu-modal-permissions-denied">\n      <div class="gosvon-advanced-menu-modal-permissions-denied-title-wrap">\n        <div class="gosvon-advanced-menu-modal-permissions-denied-title">\n          Ловушка Повара — Инспектор\n        </div>\n      </div>\n      <div class="gosvon-advanced-menu-modal-permissions-denied-description">\n        Чтобы открыть <a target="_blank" href="${src_DI.host}/help/#inspector">инспектор</a>, необходимо иметь код и специальный уровень доступа, которые вы можете получить через нашего бота в&nbsp;Телеграме: <a target="_blank" href="https://t.me/GosvonBot/">t.me/GosvonBot</a>.\n        <br><br>\n        Код необходимо ввести <a class="gosvon-advanced-menu-modal-settings-link">в&nbsp;настройках&nbsp;скрипта</a>.\n      </div>\n    </div>\n  `);
             document.body.appendChild(modalEl);
             src_DI.advancedMenuStore.saveModalElement(iframeEl);
             const clickoutListenerEl = modalEl.querySelector(".gosvon-advanced-menu-modal-clickout-listener");
@@ -1351,11 +1352,11 @@
             setTimeout(close, 6e4);
             document.body.appendChild(notificationsEl);
         }
-        // EXTERNAL MODULE: ./node_modules/@mdi/svg/svg/information.svg
-                var information = __webpack_require__(64);
+        // EXTERNAL MODULE: ../../node_modules/.pnpm/@mdi+svg@7.2.96/node_modules/@mdi/svg/svg/information.svg
+                var information = __webpack_require__(142);
         var information_default = __webpack_require__.n(information);
-        // EXTERNAL MODULE: ./node_modules/@mdi/svg/svg/eye-outline.svg
-                var eye_outline = __webpack_require__(102);
+        // EXTERNAL MODULE: ../../node_modules/.pnpm/@mdi+svg@7.2.96/node_modules/@mdi/svg/svg/eye-outline.svg
+                var eye_outline = __webpack_require__(548);
         var eye_outline_default = __webpack_require__.n(eye_outline);
         function isMobile() {
             return !!document.location.host.match("m.vk.com");
@@ -1387,7 +1388,7 @@
             }), "");
         }
         function injectSettingsModal() {
-            const modalEl = createLayoutFromString(`\n    <div\n        class="\n            gosvon-settings-modal\n            ${isMobile() ? "gosvon-settings-modal-mobile" : ""}\n            gosvon-js-settings-modal\n        "\n        style="display: none;"\n    >\n        <div class="gosvon-settings-container">\n            <div class="gosvon-settings-modal-title-wrap">\n                <div\n                    class="gosvon-settings-modal-close"\n                    aria-label="Закрыть"\n                    tabindex="0"\n                    role="button"\n                    onclick="closeSettingsModal()"\n                >\n                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">\n                        <g id="cancel_24__Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n                            <g id="cancel_24__cancel_24">\n                                <path id="cancel_24__Bounds" d="M0 0h24v24H0z">\n                                </path>\n                                <path d="M18.3 5.7a.99.99 0 00-1.4 0L12 10.6 7.1 5.7a.99.99 0 00-1.4 1.4l4.9 4.9-4.9 4.9a.99.99 0 001.4 1.4l4.9-4.9 4.9 4.9a.99.99 0 001.4-1.4L13.4 12l4.9-4.9a.99.99 0 000-1.4z" id="cancel_24__Mask" fill="currentColor">\n                                </path>\n                            </g>\n                        </g>\n                    </svg>\n                </div>\n\n                <div class="gosvon-settings-modal-title">\n                    Ловушка Повара — Настройки\n                </div>\n            </div>\n\n            <div class="gosvon-settings-content">\n                <div class="gosvon-token-field-wrapper">\n                    <div class="gosvon-token-line">\n                        <div class="gosvon-token-form-line">\n                            <div class="gosvon-token-input-line">\n                                <form>\n                                    <input\n                                        placeholder="Код доступа"\n                                        type="text"\n                                        type="password"\n                                        value="${src_DI.tokenStore.state.userToken || ""}"\n                                        class="gosvon-token-field"\n                                    />\n                                </form>\n                                <button\n                                    class="gosvon-token-show-btn gosvon-token-btn"\n                                    onclick="toggleTokenShow()"\n                                >\n                                  ${eye_outline_default()}\n                                </button>\n                                <button\n                                    class="gosvon-token-clear-btn gosvon-token-btn"\n                                    onclick="clearToken()"\n                                >\n                                    &times;\n                                </button>\n                            </div>\n\n                            <button\n                                class="gosvon-token-check-btn"\n                                onclick="checkToken()"\n                            >\n                                Установить код\n                            </button>\n                        </div>\n\n                        <div class="gosvon-token-info"></div>\n                    </div>\n\n                    <div class="gosvon-token-error"></div>\n\n                    <div class="gosvon-token-description">\n                        Код доступа вы можете получить через нашего бота в телеграме\n                        <a target="_blank" href="https://t.me/GosvonBot/">t.me/GosvonBot</a>.\n                        Дополнительные уровни доступа можно получить при подписке\n                        на регулярную поддержку проекта,\n                        а также другими способами\n                    </div>\n                </div>\n\n                <div class="gosvon-flex gosvon-mb-30">\n\n                    <div class="gosvon-settings-modal-hidden-mobile gosvon-w-full gosvon-mr-20">\n                        <label class="gosvon-checkbox">\n                            <input\n                                type="checkbox"\n                                ${src_DI.userSettings.state.isFansTableViewEnabled ? "checked" : ""}\n                                onchange="setIsFansTableViewEnabled(this)"\n                            />\n\n                            <div class="gosvon-checkbox-view"></div>\n\n                            <div>\n                                Табличный вид лайков в окне\n                            </div>\n                        </label>\n                    </div>\n\n                    <div class="gosvon-w-full">\n                        <label class="gosvon-checkbox">\n                            <input\n                                type="checkbox"\n                                class="gosvon-js-replies-collecting-checkbox"\n                                ${!src_DI.tokenStore.state.userToken ? "disabled" : ""}\n                                ${src_DI.userSettings.state.isRepliesCollectingEnabled && !src_DI.tokenStore.state.userToken ? "checked" : ""}\n                                onchange="setIsRepliesCollectingEnabled(this)"\n                            />\n\n                            <div class="gosvon-checkbox-view gosvon-js-replies-collecting-checkbox-view"></div>\n\n                            <div>\n                                Сбор и отправка комментаторов\n                            </div>\n\n                            <a\n                                class="gosvon-replies-collecting-description"\n                                target="_blank"\n                                href="https://gosvon.net/help/#replies-collecting"\n                            >\n                                ${information_default()}\n                            </a>\n                        </label>\n                    </div>\n\n                </div>\n\n                <div class="gosvon-settings-modal-checkboxes">\n\n                    <div class="gosvon-settings-modal-types">\n\n                        ${createTypesCheckboxes()}\n\n                    </div>\n\n                    <div class="gosvon-settings-modal-marks">\n\n                        ${createMarksCheckboxes()}\n\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n  `);
+            const modalEl = createLayoutFromString(`\n    <div\n        class="\n            gosvon-settings-modal\n            ${isMobile() ? "gosvon-settings-modal-mobile" : ""}\n            gosvon-js-settings-modal\n        "\n        style="display: none;"\n    >\n        <div class="gosvon-settings-container">\n            <div class="gosvon-settings-modal-title-wrap">\n                <div\n                    class="gosvon-settings-modal-close"\n                    aria-label="Закрыть"\n                    tabindex="0"\n                    role="button"\n                    onclick="closeSettingsModal()"\n                >\n                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">\n                        <g id="cancel_24__Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">\n                            <g id="cancel_24__cancel_24">\n                                <path id="cancel_24__Bounds" d="M0 0h24v24H0z">\n                                </path>\n                                <path d="M18.3 5.7a.99.99 0 00-1.4 0L12 10.6 7.1 5.7a.99.99 0 00-1.4 1.4l4.9 4.9-4.9 4.9a.99.99 0 001.4 1.4l4.9-4.9 4.9 4.9a.99.99 0 001.4-1.4L13.4 12l4.9-4.9a.99.99 0 000-1.4z" id="cancel_24__Mask" fill="currentColor">\n                                </path>\n                            </g>\n                        </g>\n                    </svg>\n                </div>\n\n                <div class="gosvon-settings-modal-title">\n                    Ловушка Повара — Настройки\n                </div>\n            </div>\n\n            <div class="gosvon-settings-content">\n                <div class="gosvon-token-field-wrapper">\n                    <div class="gosvon-token-line">\n                        <div class="gosvon-token-form-line">\n                            <div class="gosvon-token-input-line">\n                                <form>\n                                    <input\n                                        placeholder="Код доступа"\n                                        type="text"\n                                        type="password"\n                                        value="${src_DI.tokenStore.state.userToken || ""}"\n                                        class="gosvon-token-field"\n                                    />\n                                </form>\n                                <button\n                                    class="gosvon-token-show-btn gosvon-token-btn"\n                                    onclick="toggleTokenShow()"\n                                >\n                                  ${eye_outline_default()}\n                                </button>\n                                <button\n                                    class="gosvon-token-clear-btn gosvon-token-btn"\n                                    onclick="clearToken()"\n                                >\n                                    &times;\n                                </button>\n                            </div>\n\n                            <button\n                                class="gosvon-token-check-btn"\n                                onclick="checkToken()"\n                            >\n                                Установить код\n                            </button>\n                        </div>\n\n                        <div class="gosvon-token-info"></div>\n                    </div>\n\n                    <div class="gosvon-token-error"></div>\n\n                    <div class="gosvon-token-description">\n                        Код доступа вы можете получить через нашего бота в телеграме\n                        <a target="_blank" href="https://t.me/GosvonBot/">t.me/GosvonBot</a>.\n                        Дополнительные уровни доступа можно получить при подписке\n                        на регулярную поддержку проекта,\n                        а также другими способами\n                    </div>\n                </div>\n\n                <div class="gosvon-flex gosvon-mb-30">\n\n                    <div class="gosvon-settings-modal-hidden-mobile gosvon-w-full gosvon-mr-20">\n                        <label class="gosvon-checkbox">\n                            <input\n                                type="checkbox"\n                                ${src_DI.userSettings.state.isFansTableViewEnabled ? "checked" : ""}\n                                onchange="setIsFansTableViewEnabled(this)"\n                            />\n\n                            <div class="gosvon-checkbox-view"></div>\n\n                            <div>\n                                Табличный вид лайков в окне\n                            </div>\n                        </label>\n                    </div>\n\n                    <div class="gosvon-w-full">\n                        <label class="gosvon-checkbox">\n                            <input\n                                type="checkbox"\n                                class="gosvon-js-replies-collecting-checkbox"\n                                ${!src_DI.tokenStore.state.userToken ? "disabled" : ""}\n                                ${src_DI.userSettings.state.isRepliesCollectingEnabled && !src_DI.tokenStore.state.userToken ? "checked" : ""}\n                                onchange="setIsRepliesCollectingEnabled(this)"\n                            />\n\n                            <div class="gosvon-checkbox-view gosvon-js-replies-collecting-checkbox-view"></div>\n\n                            <div>\n                                Сбор и отправка комментаторов\n                            </div>\n\n                            <a\n                                class="gosvon-replies-collecting-description"\n                                target="_blank"\n                                href="${src_DI.host}/help/#replies-collecting"\n                            >\n                                ${information_default()}\n                            </a>\n                        </label>\n                    </div>\n\n                </div>\n\n                <div class="gosvon-settings-modal-checkboxes">\n\n                    <div class="gosvon-settings-modal-types">\n\n                        ${createTypesCheckboxes()}\n\n                    </div>\n\n                    <div class="gosvon-settings-modal-marks">\n\n                        ${createMarksCheckboxes()}\n\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n  `);
             const tokenField = modalEl.querySelector(".gosvon-token-field");
             const checkTokenBtnEl = modalEl.querySelector(".gosvon-token-check-btn");
             const checkTokenErrorEl = modalEl.querySelector(".gosvon-token-error");
@@ -1446,17 +1447,17 @@
             const lastExistingMenuItem = existingMenuItems[existingMenuItems.length - 2];
             lastExistingMenuItem.after(createLayoutFromString(`\n      <a\n        class="top_profile_mrow"\n        onclick="TopMenu.select(this, event); openSettingsModal();"\n      >\n        <div class="menu_item_icon">\n          <img\n            src="${povar}"\n            width="20"\n            height="20"\n          />\n        </div>\n\n        <span>\n          GosVon\n        </span>\n      </a>\n    `));
         }
-        // EXTERNAL MODULE: ./node_modules/@mdi/svg/svg/list-box-outline.svg
-                var list_box_outline = __webpack_require__(70);
+        // EXTERNAL MODULE: ../../node_modules/.pnpm/@mdi+svg@7.2.96/node_modules/@mdi/svg/svg/list-box-outline.svg
+                var list_box_outline = __webpack_require__(158);
         var list_box_outline_default = __webpack_require__.n(list_box_outline);
-        // EXTERNAL MODULE: ./node_modules/@mdi/svg/svg/account-box-outline.svg
-                var account_box_outline = __webpack_require__(495);
+        // EXTERNAL MODULE: ../../node_modules/.pnpm/@mdi+svg@7.2.96/node_modules/@mdi/svg/svg/account-box-outline.svg
+                var account_box_outline = __webpack_require__(117);
         var account_box_outline_default = __webpack_require__.n(account_box_outline);
-        // EXTERNAL MODULE: ./node_modules/@mdi/svg/svg/calendar-month-outline.svg
-                var calendar_month_outline = __webpack_require__(133);
+        // EXTERNAL MODULE: ../../node_modules/.pnpm/@mdi+svg@7.2.96/node_modules/@mdi/svg/svg/calendar-month-outline.svg
+                var calendar_month_outline = __webpack_require__(388);
         var calendar_month_outline_default = __webpack_require__.n(calendar_month_outline);
-        // EXTERNAL MODULE: ./node_modules/@mdi/svg/svg/information-slab-box-outline.svg
-                var information_slab_box_outline = __webpack_require__(914);
+        // EXTERNAL MODULE: ../../node_modules/.pnpm/@mdi+svg@7.2.96/node_modules/@mdi/svg/svg/information-slab-box-outline.svg
+                var information_slab_box_outline = __webpack_require__(373);
         var information_slab_box_outline_default = __webpack_require__.n(information_slab_box_outline);
         function findBot(idOrNickname) {
             const matchId = String(idOrNickname).match(/^(id)?(\d{3,})$/)?.[2];
@@ -1572,13 +1573,13 @@
                     const commentsButtonEl = createReplyButton({
                         icon: list_box_outline_default(),
                         title: "Комментарии",
-                        href: `https://gosvon.net/?usr=${userID}`
+                        href: `${src_DI.host}/?usr=${userID}`
                     });
                     actionsEl.appendChild(commentsButtonEl);
                     const cardButtonEl = createReplyButton({
                         icon: account_box_outline_default(),
                         title: "Карточка",
-                        href: `https://gosvon.net/photo.php?id=${userID}&rand=${generateRandomString()}`
+                        href: `${src_DI.host}/photo.php?id=${userID}&rand=${generateRandomString()}`
                     });
                     actionsEl.appendChild(cardButtonEl);
                 }
@@ -1605,8 +1606,8 @@
                 }
             }));
         }
-        // EXTERNAL MODULE: ./node_modules/@mdi/svg/svg/account-arrow-left-outline.svg
-                var account_arrow_left_outline = __webpack_require__(208);
+        // EXTERNAL MODULE: ../../node_modules/.pnpm/@mdi+svg@7.2.96/node_modules/@mdi/svg/svg/account-arrow-left-outline.svg
+                var account_arrow_left_outline = __webpack_require__(473);
         var account_arrow_left_outline_default = __webpack_require__.n(account_arrow_left_outline);
         function getIdFromReply(replyEl) {
             const authorLinkEl = replyEl.querySelector("a.author");
@@ -1649,7 +1650,7 @@
                     return;
                 }
                 attachBotAccountBtn.style.display = "none";
-                const cardLink = `https://gosvon.net/photo.php?id=${bot.id}&rand=${generateRandomString()}`;
+                const cardLink = `${src_DI.host}/photo.php?id=${bot.id}&rand=${generateRandomString()}`;
                 const event = new ClipboardEvent("paste", {
                     clipboardData: new DataTransfer
                 });
@@ -1708,7 +1709,7 @@
             if (bot) {
                 postHeaderEl.classList.add("gosvon-post-header");
                 const botMarkChip = createLayoutFromString(`\n      <i class="gosvon-reply-mark-or-type">\n        (${bot.mark?.name || bot.type.name})\n      </i>\n    `);
-                const gosvonLinks = createLayoutFromString(`\n      <span>\n        ${botMarkChip.outerHTML}\n\n        ${bot.type.shouldShowActions ? `\n          <a target='_blank' href='https://gosvon.net/?usr=${bot.id}'>\n            Комментарии\n          </a>\n\n          <a target='_blank' href='https://gosvon.net/photo.php?id=${bot.id}&rand=${generateRandomString()}'>\n            Карточка\n          </a>\n        ` : ""}\n      </span>\n    `);
+                const gosvonLinks = createLayoutFromString(`\n      <span>\n        ${botMarkChip.outerHTML}\n\n        ${bot.type.shouldShowActions ? `\n          <a target='_blank' href='${src_DI.host}/?usr=${bot.id}'>\n            Комментарии\n          </a>\n\n          <a target='_blank' href='${src_DI.host}/photo.php?id=${bot.id}&rand=${generateRandomString()}'>\n            Карточка\n          </a>\n        ` : ""}\n      </span>\n    `);
                 if (postFromAuthorEl) {
                     postFromAuthorEl.parentElement?.after(gosvonLinks);
                 } else {
@@ -1732,7 +1733,7 @@
                 postHeaderEl.classList.add("gosvon-post-header");
                 const gosvonLine = createLayoutFromString(`\n      <div class="gosvon-post-line-old-design"></div>\n    `);
                 const botMarkChip = createLayoutFromString(`\n      <i class="gosvon-reply-mark-or-type">\n        (${bot.mark?.name || bot.type.name})\n      </i>\n    `);
-                const gosvonLinks = createLayoutFromString(`\n      <i>\n        ${botMarkChip.outerHTML}\n\n        <a target='_blank' href='https://gosvon.net/?usr=${authorId}'>\n            Комментарии\n        </a>\n        <a target='_blank' href='https://gosvon.net/photo.php?id=${authorId}&rand=${generateRandomString()}'>\n            Карточка\n        </a>\n      </i>\n    `);
+                const gosvonLinks = createLayoutFromString(`\n      <i>\n        ${botMarkChip.outerHTML}\n\n        <a target='_blank' href='${src_DI.host}/?usr=${authorId}'>\n            Комментарии\n        </a>\n        <a target='_blank' href='${src_DI.host}/photo.php?id=${authorId}&rand=${generateRandomString()}'>\n            Карточка\n        </a>\n      </i>\n    `);
                 if (bot.type.shouldShowActions) {
                     gosvonLine.append(gosvonLinks);
                 }
@@ -1767,7 +1768,7 @@
             const markEl = createLayoutFromString(`\n    <div\n        class="gosvon-desktop-fan"\n        style="\n          background: ${src_DI.userSettings.getCustomTypeColor(bot.type.id) || bot.type.serverColor};\n        "\n    >\n      (${bot.mark?.name || bot.type.name})\n    </div>\n  `);
             fanEl.appendChild(markEl);
             if (bot.type.shouldShowActions) {
-                fanEl.append(createLayoutFromString(`\n        <center>\n          <i>\n            <a target='_blank' href='https://gosvon.net/?usr=${userID}'>\n              Комм.\n            </a>\n            <a target='_blank' href='https://gosvon.net/photo.php?id=${userID}&rand=${generateRandomString()}'>\n              Карт.\n            </a>\n          </i>\n        </center>\n      `));
+                fanEl.append(createLayoutFromString(`\n        <center>\n          <i>\n            <a target='_blank' href='${src_DI.host}/?usr=${userID}'>\n              Комм.\n            </a>\n            <a target='_blank' href='${src_DI.host}/photo.php?id=${userID}&rand=${generateRandomString()}'>\n              Карт.\n            </a>\n          </i>\n        </center>\n      `));
             }
         }
         const TABLE_CLASS = "gosvon-fan-table";
@@ -1792,7 +1793,7 @@
             const pageLink = linkEl?.href || "";
             const imageSrc = fanEl.querySelector(".fans_fan_img")?.src;
             const bot = findBot(userID || "");
-            const row = createLayoutFromString(`\n    <table>\n      <tbody>\n        <tr>\n          <td class="gosvon-mono">\n            WILL BE REPLACED TO INDEX\n          </td>\n\n          <td class="gosvon-mono gosvon-tac">\n            ${userID}\n          </td>\n\n          <td\n            colspan="${bot ? 0 : 3}"\n          >\n            <div class="gosvon-name">\n              <div class="gosvon-avatar">\n                <img\n                  src="${imageSrc}"\n                  height="20"\n                />\n              </div>\n\n              <a\n                href="${pageLink}"\n                target="_blank"\n              >\n                ${name}\n              </a>\n            </div>\n          </td>\n\n          ${bot ? `\n            <td\n              class="gosvon-tac"\n              style="\n                background: ${src_DI.userSettings.getCustomTypeColor(bot.type.id) || bot.type.serverColor};\n              "\n            >\n              ${bot.mark?.name || bot.type.name || ""}\n            </td>\n\n            <td class="gosvon-tac">\n              ${bot.type.shouldShowActions ? `\n                <a target='_blank' href='https://gosvon.net/?usr=${userID}'>\n                  Комментарии\n                </a>\n\n                <a target='_blank' href='https://gosvon.net/photo.php?id=${userID}&rand=${generateRandomString()}'>\n                  Карточка\n                </a>\n              ` : ""}\n            </td>\n          ` : ""}\n        </tr>\n      </tbody>\n    </table>\n  `).children[0].children[0];
+            const row = createLayoutFromString(`\n    <table>\n      <tbody>\n        <tr>\n          <td class="gosvon-mono">\n            WILL BE REPLACED TO INDEX\n          </td>\n\n          <td class="gosvon-mono gosvon-tac">\n            ${userID}\n          </td>\n\n          <td\n            colspan="${bot ? 0 : 3}"\n          >\n            <div class="gosvon-name">\n              <div class="gosvon-avatar">\n                <img\n                  src="${imageSrc}"\n                  height="20"\n                />\n              </div>\n\n              <a\n                href="${pageLink}"\n                target="_blank"\n              >\n                ${name}\n              </a>\n            </div>\n          </td>\n\n          ${bot ? `\n            <td\n              class="gosvon-tac"\n              style="\n                background: ${src_DI.userSettings.getCustomTypeColor(bot.type.id) || bot.type.serverColor};\n              "\n            >\n              ${bot.mark?.name || bot.type.name || ""}\n            </td>\n\n            <td class="gosvon-tac">\n              ${bot.type.shouldShowActions ? `\n                <a target='_blank' href='${src_DI.host}/?usr=${userID}'>\n                  Комментарии\n                </a>\n\n                <a target='_blank' href='${src_DI.host}/photo.php?id=${userID}&rand=${generateRandomString()}'>\n                  Карточка\n                </a>\n              ` : ""}\n            </td>\n          ` : ""}\n        </tr>\n      </tbody>\n    </table>\n  `).children[0].children[0];
             const rowWithIdLessThanCurrent = [ ...table.children ].find((rowEl => {
                 const rowId = Number(rowEl.children[1]?.innerHTML.replace(/\D/g, ""));
                 return rowId < Number(userID);
@@ -1848,7 +1849,7 @@
             if (bot) {
                 const gosvonLine = createLayoutFromString(`\n      <div class="gosvon-profile-line"></div>\n    `);
                 const botMarkChip = createLayoutFromString(`\n      <i class="gosvon-mark-chip">\n        (${bot.mark?.name || bot.type.name})\n      </i>\n    `);
-                const gosvonLinks = createLayoutFromString(`\n      <i>\n        <a target='_blank' href='https://gosvon.net/?usr=${idOrNickname}'>\n            Комментарии\n        </a>\n        <a target='_blank' href='https://gosvon.net/photo.php?id=${idOrNickname}&rand=${generateRandomString()}'>\n            Карточка\n        </a>\n      </i>\n    `);
+                const gosvonLinks = createLayoutFromString(`\n      <i>\n        <a target='_blank' href='${src_DI.host}/?usr=${idOrNickname}'>\n            Комментарии\n        </a>\n        <a target='_blank' href='${src_DI.host}/photo.php?id=${idOrNickname}&rand=${generateRandomString()}'>\n            Карточка\n        </a>\n      </i>\n    `);
                 gosvonLine.append(botMarkChip);
                 if (bot.type.shouldShowActions) {
                     gosvonLine.append(gosvonLinks);
@@ -1877,7 +1878,7 @@
             }
             const selectedHighlightArea = areaPostFromAuthorEl || postHeaderEl;
             selectedHighlightArea.classList.add("gosvon-post-mobile-header");
-            const gosvonLinks = createLayoutFromString(`\n    <div>\n      <i class="gosvon-reply-mark-or-type">\n        (${bot.mark?.name || bot.type.name})\n      </i>\n\n      ${bot.type.shouldShowActions ? `\n        <a target='_blank' href='https://gosvon.net/?usr=${bot.id}'>\n          Комментарии\n        </a>\n\n        <a target='_blank' href='https://gosvon.net/photo.php?id=${bot.id}&rand=${generateRandomString()}'>\n          Карточка\n        </a>\n      ` : ""}\n    </div>\n  `);
+            const gosvonLinks = createLayoutFromString(`\n    <div>\n      <i class="gosvon-reply-mark-or-type">\n        (${bot.mark?.name || bot.type.name})\n      </i>\n\n      ${bot.type.shouldShowActions ? `\n        <a target='_blank' href='${src_DI.host}/?usr=${bot.id}'>\n          Комментарии\n        </a>\n\n        <a target='_blank' href='${src_DI.host}/photo.php?id=${bot.id}&rand=${generateRandomString()}'>\n          Карточка\n        </a>\n      ` : ""}\n    </div>\n  `);
             if (postFromAuthorEl) {
                 postFromAuthorEl.after(gosvonLinks);
             } else {
@@ -1902,7 +1903,7 @@
             }
             const gosvonLine = createLayoutFromString(`\n    <div class="gosvon-mt-10 gosvon-mb-10"></div>\n  `);
             const botMarkChip = createLayoutFromString(`\n    <i class="gosvon-mark-chip">\n      (${bot.mark?.name || bot.type.name})\n    </i>\n  `);
-            const gosvonLinks = createLayoutFromString(`\n    <center>\n      <div class="gosvon-chip-placeholder"></div>\n\n      ${bot.type.shouldShowActions ? `\n        <a target='_blank' href='https://gosvon.net/?usr=${bot.id}'>\n          Комментарии\n        </a>\n\n        <a target='_blank' href='https://gosvon.net/photo.php?id=${bot.id}&rand=${generateRandomString()}'>\n          Карточка\n        </a>\n      ` : ""}\n    </center>\n  `);
+            const gosvonLinks = createLayoutFromString(`\n    <center>\n      <div class="gosvon-chip-placeholder"></div>\n\n      ${bot.type.shouldShowActions ? `\n        <a target='_blank' href='${src_DI.host}/?usr=${bot.id}'>\n          Комментарии\n        </a>\n\n        <a target='_blank' href='${src_DI.host}/photo.php?id=${bot.id}&rand=${generateRandomString()}'>\n          Карточка\n        </a>\n      ` : ""}\n    </center>\n  `);
             const chipPlaceholderEl = gosvonLinks.querySelector(".gosvon-chip-placeholder");
             chipPlaceholderEl?.replaceWith(botMarkChip);
             gosvonLine.append(gosvonLinks);
@@ -1975,9 +1976,9 @@
                     highlightArea.classList.add("gosvon-reply-content-from-bot");
                 }));
                 if (bot.type.shouldShowActions) {
-                    const commentsButtonEl = createLayoutFromString(`\n        <a\n        class="gosvon-reply-mobile-action"\n        href="https://gosvon.net/?usr=${userID}"\n        target="blank"\n        >\n          ${list_box_outline_default()}\n        </a>\n      `);
+                    const commentsButtonEl = createLayoutFromString(`\n        <a\n        class="gosvon-reply-mobile-action"\n        href="${src_DI.host}/?usr=${userID}"\n        target="blank"\n        >\n          ${list_box_outline_default()}\n        </a>\n      `);
                     actionsEl.appendChild(commentsButtonEl);
-                    const cardButtonEl = createLayoutFromString(`\n        <a\n          class="gosvon-reply-mobile-action"\n          href="https://gosvon.net/photo.php?id=${userID}&rand=${generateRandomString()}"\n          target="blank"\n        >\n        ${account_box_outline_default()}\n        </a>\n      `);
+                    const cardButtonEl = createLayoutFromString(`\n        <a\n          class="gosvon-reply-mobile-action"\n          href="${src_DI.host}/photo.php?id=${userID}&rand=${generateRandomString()}"\n          target="blank"\n        >\n        ${account_box_outline_default()}\n        </a>\n      `);
                     actionsEl.appendChild(cardButtonEl);
                 }
             }
@@ -2009,7 +2010,7 @@
                 highlightOverlayEl.style.background = customUserColor || bot.type.serverColor;
             }));
             if (bot.type.shouldShowActions) {
-                fanEl.appendChild(createLayoutFromString(`\n      <i>\n        <a\n          target="_blank"\n          onclick="event.stopPropagation();"\n          href="https://gosvon.net/?usr=${userID}"\n        >\n          Комментарии\n        </a>\n        <a\n          target="_blank"\n          onclick="event.stopPropagation();"\n          href="https://gosvon.net/photo.php?id=${userID}&rand=${generateRandomString()}"\n        >\n          Карточка\n        </a>\n      </i>\n    `));
+                fanEl.appendChild(createLayoutFromString(`\n      <i>\n        <a\n          target="_blank"\n          onclick="event.stopPropagation();"\n          href="${src_DI.host}/?usr=${userID}"\n        >\n          Комментарии\n        </a>\n        <a\n          target="_blank"\n          onclick="event.stopPropagation();"\n          href="${src_DI.host}/photo.php?id=${userID}&rand=${generateRandomString()}"\n        >\n          Карточка\n        </a>\n      </i>\n    `));
             }
             fanEl.appendChild(createLayoutFromString(`\n    <div class="gosvon-fan-mark-or-type">\n      (${bot.mark?.name || bot.type.name})\n    </div>\n  `));
         }
@@ -2032,7 +2033,7 @@
             }));
             const markEl = createLayoutFromString(`\n    <i>\n      (${bot.mark?.name || bot.type.name})\n    </i>\n  `);
             mentionTTTitle.after(markEl);
-            markEl.after(createLayoutFromString(`\n      <i>\n          <a target='_blank' href='https://gosvon.net/?usr=${userID}'>\n              Комментарии\n          </a>\n          <a target='_blank' href='https://gosvon.net/photo.php?id=${userID}&rand=${generateRandomString()}'>\n              Карточка\n          </a>\n      </i>\n    `));
+            markEl.after(createLayoutFromString(`\n      <i>\n          <a target='_blank' href='${src_DI.host}/?usr=${userID}'>\n              Комментарии\n          </a>\n          <a target='_blank' href='${src_DI.host}/photo.php?id=${userID}&rand=${generateRandomString()}'>\n              Карточка\n          </a>\n      </i>\n    `));
         }
         function elementsFinderFactory() {
             const mapSelectorHandlers = {};
@@ -2058,19 +2059,26 @@
                 on
             };
         }
-        var injectStylesIntoStyleTag = __webpack_require__(379);
+        // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.2_webpack@5.77.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
+                var injectStylesIntoStyleTag = __webpack_require__(95);
         var injectStylesIntoStyleTag_default = __webpack_require__.n(injectStylesIntoStyleTag);
-        var styleDomAPI = __webpack_require__(795);
+        // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.2_webpack@5.77.0/node_modules/style-loader/dist/runtime/styleDomAPI.js
+                var styleDomAPI = __webpack_require__(17);
         var styleDomAPI_default = __webpack_require__.n(styleDomAPI);
-        var insertBySelector = __webpack_require__(569);
+        // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.2_webpack@5.77.0/node_modules/style-loader/dist/runtime/insertBySelector.js
+                var insertBySelector = __webpack_require__(545);
         var insertBySelector_default = __webpack_require__.n(insertBySelector);
-        var setAttributesWithoutAttributes = __webpack_require__(565);
+        // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.2_webpack@5.77.0/node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js
+                var setAttributesWithoutAttributes = __webpack_require__(855);
         var setAttributesWithoutAttributes_default = __webpack_require__.n(setAttributesWithoutAttributes);
-        var insertStyleElement = __webpack_require__(216);
+        // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.2_webpack@5.77.0/node_modules/style-loader/dist/runtime/insertStyleElement.js
+                var insertStyleElement = __webpack_require__(919);
         var insertStyleElement_default = __webpack_require__.n(insertStyleElement);
-        var styleTagTransform = __webpack_require__(589);
+        // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.2_webpack@5.77.0/node_modules/style-loader/dist/runtime/styleTagTransform.js
+                var styleTagTransform = __webpack_require__(825);
         var styleTagTransform_default = __webpack_require__.n(styleTagTransform);
-        var style = __webpack_require__(192);
+        // EXTERNAL MODULE: ../../node_modules/.pnpm/css-loader@6.7.3_webpack@5.77.0/node_modules/css-loader/dist/cjs.js!../../node_modules/.pnpm/sass-loader@13.2.2_sass@1.60.0_webpack@5.77.0/node_modules/sass-loader/dist/cjs.js!./src/style.scss
+                var style = __webpack_require__(512);
         var options = {};
         options.styleTagTransform = styleTagTransform_default();
         options.setAttributes = setAttributesWithoutAttributes_default();
