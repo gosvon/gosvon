@@ -2,7 +2,7 @@
 // @name         GosVon Marking for VK
 // @namespace    vk-metabot-user-js
 // @description  Подсветка служебных страниц вконтакте.
-// @version      3.03
+// @version      3.04
 // @homepageURL  https://vk.com/club187686148
 // @match        https://*.vk.com/*
 // @match        *://web.archive.org/*://*vk.com/*
@@ -14,6 +14,7 @@
 // @connect      *.netlify.app
 // @updateURL    https://raw.githubusercontent.com/gosvon/gosvon/user-script/vk-metabot.meta.js
 // @downloadURL  https://raw.githubusercontent.com/gosvon/gosvon/user-script/vk-metabot.user.js
+// @update       https://raw.githubusercontent.com/gosvon/gosvon/user-script/vk-metabot.user.js
 // @grant        GM_xmlhttpRequest
 // @grant        GM.xmlHttpRequest
 // @grant        GM_setValue
@@ -39,7 +40,7 @@
             var ___CSS_LOADER_EXPORT___ = _node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()(_node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default());
             var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
             var ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_pnpm_css_loader_6_7_3_webpack_5_77_0_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);
-            ___CSS_LOADER_EXPORT___.push([ module.id, '.gosvon-reset-color-btn{border:0;border-radius:50%;margin-left:5px;height:20px;margin-top:3px;cursor:pointer;width:20px;transition:all .2s;opacity:.6}.gosvon-reset-color-btn:hover{opacity:.8}.gosvon-reset-color-btn:active{opacity:1}.gosvon-type-checkbox{display:flex;margin-bottom:2px}.gosvon-type-checkbox__label{margin-bottom:10px;width:180px}.gosvon-type-color{height:22px;border:0;cursor:pointer}.gosvon-type-name{width:180px}.gosvon-settings-modal{top:0;position:fixed;display:flex;flex-direction:column;justify-content:center;overflow:auto;z-index:1000;width:100%;height:100%}.gosvon-settings-modal-close{position:relative;float:right;padding:15px 20px 15px 15px;width:24px;height:24px;opacity:75%;color:var(--icon_medium);cursor:pointer;outline:0}.gosvon-settings-modal-title-wrap,.gosvon-advanced-menu-modal-permissions-denied-title-wrap{position:relative;padding:0;background-color:var(--background_light);color:var(--vkui--color_text_primary);border-bottom:1px solid var(--separator_common);border-radius:var(--vkui--size_border_radius_paper--regular, 8px) var(--vkui--size_border_radius_paper--regular, 8px) 0 0}.gosvon-settings-modal-title,.gosvon-advanced-menu-modal-permissions-denied-title{padding-left:25px;font-size:14px;color:var(--vkui--color_text_primary);height:54px;line-height:54px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.gosvon-settings-container{width:100%;max-width:650px;box-shadow:0 2px 10px var(--black_alpha40);margin:20px auto}.gosvon-settings-modal-types{width:300px;overflow-y:scroll;padding-top:5px;padding-bottom:5px}.gosvon-settings-modal-marks{width:270px;height:273px;overflow-y:scroll;padding-top:5px;padding-bottom:5px}@keyframes glowing{0%{width:40px;height:40px;box-shadow:0 0 10px #f99,0 0 5px #f99;border:2px solid #f99}50%{width:30px;height:30px;box-shadow:0 0 10px #f99,0 0 5px #f99;border:2px solid #f99}100%{width:40px;height:40px;box-shadow:0 0 10px #f99,0 0 5px #f99;border:2px solid #f99}}.gosvon-replies-collecting-enabled-automatically{position:relative}.gosvon-replies-collecting-enabled-automatically::after{content:"";display:block;position:absolute;top:50%;left:50%;border-radius:50%;transform:translate(-50%, -50%);animation:glowing 1s 5;user-select:none}.gosvon-checkbox{display:flex;align-items:center;cursor:pointer;line-height:1.27em}.gosvon-checkbox input{display:none}.gosvon-checkbox input+.gosvon-checkbox-view{display:block;float:left;background-image:url(' + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");background-position:center;background-repeat:no-repeat;margin:0 7px 0 0;width:16px;height:16px;margin-top:-1px}.gosvon-checkbox input:checked+.gosvon-checkbox-view{background-image:url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ")}.gosvon-checkbox input:disabled+.gosvon-checkbox-view{filter:contrast(0)}.gosvon-checkbox:has(input:disabled){cursor:default}.gosvon-token-field-wrapper{margin-bottom:15px}.gosvon-token-line{position:relative;display:flex;flex-wrap:wrap;align-items:center;margin-bottom:5px;column-gap:10px}.gosvon-token-form-line{position:relative;display:flex;align-items:center;margin-bottom:5px}.gosvon-token-input-line{position:relative;display:flex;align-items:center;flex-wrap:wrap}.gosvon-token-field{box-sizing:border-box;display:block;padding:6px;height:33px;width:300px;font-family:monospace;border:1px solid #000;border-radius:3px}.gosvon-token-description{font-size:12px;color:var(--text_primary)}.gosvon-token-btn{position:absolute;top:4px;padding:0;height:25px;width:25px;border:1px solid #000;border-radius:3px;cursor:pointer}.gosvon-token-show-btn{right:34px}.gosvon-token-show-btn svg{width:16px;height:16px;vertical-align:middle;color:inherit;display:inline-block;fill:var(--vkui--color_text_primary)}.gosvon-token-clear-btn{right:4px}.gosvon-token-error{color:red}.gosvon-token-check-btn{box-sizing:border-box;height:33px;margin-left:5px;border:1px solid #000;border-radius:3px}.gosvon-token-info{position:relative;top:-3px}.gosvon-settings-content,.gosvon-advanced-menu-modal-permissions-denied-description{padding:20px 25px;line-height:19px;overflow:auto;background-color:var(--background_light)}.gosvon-settings-content{height:450px}.gosvon-settings-modal-mobile{background:var(--background_content);overflow:auto}.gosvon-settings-modal-mobile .gosvon-settings-container{margin-top:0;height:unset}.gosvon-settings-modal-mobile .gosvon-settings-content{background:var(--background_content);height:unset}.gosvon-settings-modal-mobile .gosvon-settings-modal-hidden-mobile{display:none}.gosvon-settings-modal-mobile .gosvon-token-field{width:unset}.gosvon-settings-modal-mobile .gosvon-settings-modal-title-wrap{border-radius:0}.gosvon-settings-modal-checkboxes{display:flex;gap:10px;flex-wrap:wrap}.gosvon-advanced-menu-modal{position:fixed;top:0;left:0;bottom:0;right:0;z-index:9999;transition:all .2s;display:flex;flex-wrap:nowrap;flex-direction:row;align-items:safe center;justify-content:center}.gosvon-advanced-menu-modal-clickout-listener{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.4)}.gosvon-advanced-menu-modal-close{display:flex;justify-content:center;align-items:center;background:var(--background_light);border-radius:50px;position:absolute;right:10px;padding:10px;top:8px;height:45px;width:45px;cursor:pointer;box-sizing:border-box;transition:opacity .2s}.gosvon-advanced-menu-modal-close:hover{background:var(--background_hover)}.gosvon-advanced-menu-modal-content{position:relative;z-index:1;width:500px}.gosvon-advanced-menu-modal-content-mount{height:370px}#wk_likes_content{padding:20px}.gosvon-fan-table{width:100%;border-collapse:collapse}.gosvon-fan-table td{padding:0;border:1px solid rgba(0,0,0,.1882352941)}.gosvon-fan-table .gosvon-avatar{margin-right:3px;display:flex;align-items:center}.gosvon-fan-table .gosvon-name{display:flex;align-items:center}.gosvon-fan-table .gosvon-avatar img{transition:all .2s;pointer-events:none}.gosvon-fan-table .gosvon-avatar:hover img{transform:scale(10)}.bot-mark-or-type{position:absolute;left:60px;bottom:5px;font-size:10px;color:#000}.gosvon-profile-registration-date{opacity:.5;text-align:center}.gosvon-mobile-profile-bot-info{text-align:center;z-index:12;position:relative}.gosvon-reg-date{opacity:.5}.gosvon-mobile-reply-line{display:inline-block}.gosvon-desktop-fan{text-align:center;position:absolute;top:50%;transform:translateY(calc(-50% - 30px));left:0;width:100%;opacity:.7;color:#000}.gosvon-settings-mark{display:block;margin-bottom:10px}.gosvon-post-header{border-left:3px solid rgba(255,50,50,.3);padding-bottom:5px !important;padding-top:10px !important}.gosvon-post-line-old-design{display:inline-block;margin-top:5px;margin-bottom:5px}.gosvon-post-line{display:inline-block;margin-top:5px;margin-bottom:5px}.r .gosvon-post-mobile-header.wi_head{padding:5px !important;padding-top:17px !important}.gosvon-reply-form-btn{position:absolute;right:90px;background:0;border:0;top:2px;height:25px;width:25px;fill:#994168;padding:3px;cursor:pointer}.gosvon-profile-line{margin-top:5px;margin-bottom:5px}.gosvon-reply-actions{display:flex;align-items:center}.gosvon-reply-mobile-actions{display:inline-flex;align-items:center;transform:translate(0, 6px)}.gosvon-reply-action{margin-left:8px;overflow:visible;max-height:1em;height:16px;width:16px;visibility:hidden;fill:var(--vkui--color_text_primary)}@media(hover: none){.reply .gosvon-reply-action{visibility:visible;opacity:.5}}.reply:hover .gosvon-reply-action{visibility:visible;opacity:.5}.gosvon-reply-action:hover{opacity:.4}.gosvon-reply-mobile-action{margin-left:12px;overflow:visible;max-height:1em;height:21px;width:21px;opacity:.4;margin-top:-10px;fill:var(--vkui--color_text_primary)}.gosvon-replies-collecting-description{width:21px;height:21px;fill:var(--text_link);transform:translateX(5px)}.gosvon-reply-content-from-bot{margin-top:-2px;padding-top:2px;margin-right:-2px;padding-right:2px;margin-bottom:-5px;padding-bottom:5px;border-left:3px solid rgba(255,50,50,.3);padding-left:2px}.gosvon-reply-mark-or-type{padding-left:2px;padding-right:2px;color:var(--gray_400)}.gosvon-user-info-wrapper{height:100%;width:100%}.gosvon-notification{position:fixed;left:50px;bottom:20px;z-index:1501;background:rgba(0,0,0,.8);width:300px;padding:16px;color:#fff;border-radius:5px}@media(max-width: 800px){.gosvon-notification{left:10px;bottom:10px}}.gosvon-notification-logo{display:flex;align-items:center;font-size:10px;gap:10px;margin-bottom:10px}.gosvon-notification-close{position:absolute;right:5px;top:5px;opacity:.7;transition:all .2s;font-size:20px;font-weight:bold;display:flex;align-items:center;justify-content:center;height:25px;width:25px;cursor:pointer}.gosvon-notification-close:hover{opacity:1}.gosvon-notification-title{margin-bottom:10px;font-weight:bold}.gosvon-notification-text a{color:#54abff}.gosvon-mark-chip{padding:3px 6px;background:#000;border-radius:3px;color:#fff;margin-right:10px}.vkui--vkBase--dark .gosvon-mark-chip{background:#894646}.gosvon-highlight-overlay{position:absolute;width:100%;height:100%;pointer-events:none;top:0;left:0;opacity:.4}.gosvon-ib{display:inline-block}.gosvon-flex{display:flex}.gosvon-w-full{width:100%}.gosvon-tac{text-align:center}.gosvon-mono{font-family:monospace}.gosvon-mb-40{margin-bottom:30px}.gosvon-mb-30{margin-bottom:30px}.gosvon-mb-20{margin-bottom:20px}.gosvon-mb-10{margin-bottom:10px}.gosvon-mt-10{margin-top:10px}.gosvon-mt-40{margin-top:40px}.gosvon-mr-20{margin-right:20px}", "" ]);
+            ___CSS_LOADER_EXPORT___.push([ module.id, '.gosvon-reset-color-btn{border:0;border-radius:50%;margin-left:5px;height:20px;margin-top:3px;cursor:pointer;width:20px;transition:all .2s;opacity:.6}.gosvon-reset-color-btn:hover{opacity:.8}.gosvon-reset-color-btn:active{opacity:1}.gosvon-type-checkbox{display:flex;margin-bottom:2px}.gosvon-type-checkbox__label{margin-bottom:10px;width:180px}.gosvon-type-color{height:22px;border:0;cursor:pointer}.gosvon-type-name{width:180px}.gosvon-settings-modal{top:0;position:fixed;display:flex;flex-direction:column;justify-content:center;overflow:auto;z-index:1000;width:100%;height:100%}.gosvon-settings-modal-close{position:relative;float:right;padding:15px 20px 15px 15px;width:24px;height:24px;opacity:75%;color:var(--icon_medium);cursor:pointer;outline:0}.gosvon-settings-modal-title-wrap,.gosvon-advanced-menu-modal-permissions-denied-title-wrap{position:relative;padding:0;background-color:var(--background_light);color:var(--vkui--color_text_primary);border-bottom:1px solid var(--separator_common);border-radius:var(--vkui--size_border_radius_paper--regular, 8px) var(--vkui--size_border_radius_paper--regular, 8px) 0 0}.gosvon-settings-modal-title,.gosvon-advanced-menu-modal-permissions-denied-title{padding-left:25px;font-size:14px;color:var(--vkui--color_text_primary);height:54px;line-height:54px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.gosvon-settings-container{width:100%;max-width:650px;box-shadow:0 2px 10px var(--black_alpha40);margin:20px auto}.gosvon-settings-modal-types{width:300px;overflow-y:scroll;padding-top:5px;padding-bottom:5px}.gosvon-settings-modal-marks{width:270px;height:273px;overflow-y:scroll;padding-top:5px;padding-bottom:5px}@keyframes glowing{0%{width:40px;height:40px;box-shadow:0 0 10px #f99,0 0 5px #f99;border:2px solid #f99}50%{width:30px;height:30px;box-shadow:0 0 10px #f99,0 0 5px #f99;border:2px solid #f99}100%{width:40px;height:40px;box-shadow:0 0 10px #f99,0 0 5px #f99;border:2px solid #f99}}.gosvon-replies-collecting-enabled-automatically{position:relative}.gosvon-replies-collecting-enabled-automatically::after{content:"";display:block;position:absolute;top:50%;left:50%;border-radius:50%;transform:translate(-50%, -50%);animation:glowing 1s 5;user-select:none}.gosvon-checkbox{display:flex;align-items:center;cursor:pointer;line-height:1.27em}.gosvon-checkbox input{display:none}.gosvon-checkbox input+.gosvon-checkbox-view{display:block;float:left;background-image:url(' + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");background-position:center;background-repeat:no-repeat;margin:0 7px 0 0;width:16px;height:16px;margin-top:-1px}.gosvon-checkbox input:checked+.gosvon-checkbox-view{background-image:url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ")}.gosvon-checkbox input:disabled+.gosvon-checkbox-view{filter:contrast(0)}.gosvon-checkbox:has(input:disabled){cursor:default}.gosvon-token-field-wrapper{margin-bottom:15px}.gosvon-token-line{position:relative;display:flex;flex-wrap:wrap;align-items:center;margin-bottom:5px;column-gap:10px}.gosvon-token-form-line{position:relative;display:flex;align-items:center;margin-bottom:5px}.gosvon-token-input-line{position:relative;display:flex;align-items:center;flex-wrap:wrap}.gosvon-token-field{box-sizing:border-box;display:block;padding:6px;height:33px;width:300px;font-family:monospace;border:1px solid #000;border-radius:3px}.gosvon-token-description{font-size:12px;color:var(--text_primary)}.gosvon-token-btn{position:absolute;top:4px;padding:0;height:25px;width:25px;border:1px solid #000;border-radius:3px;cursor:pointer}.gosvon-token-show-btn{right:34px}.gosvon-token-show-btn svg{width:16px;height:16px;vertical-align:middle;color:inherit;display:inline-block;fill:var(--vkui--color_text_primary)}.gosvon-token-clear-btn{right:4px}.gosvon-token-error{color:red}.gosvon-token-check-btn{box-sizing:border-box;height:33px;margin-left:5px;border:1px solid #000;border-radius:3px}.gosvon-token-info{position:relative;top:-3px;font-size:12px}.gosvon-settings-content,.gosvon-advanced-menu-modal-permissions-denied-description{padding:20px 25px;line-height:19px;overflow:auto;background-color:var(--background_light)}.gosvon-settings-content{height:450px}.gosvon-settings-modal-mobile{background:var(--background_content);overflow:auto}.gosvon-settings-modal-mobile .gosvon-settings-container{margin-top:0;height:unset}.gosvon-settings-modal-mobile .gosvon-settings-content{background:var(--background_content);height:unset}.gosvon-settings-modal-mobile .gosvon-settings-modal-hidden-mobile{display:none}.gosvon-settings-modal-mobile .gosvon-token-field{width:unset}.gosvon-settings-modal-mobile .gosvon-settings-modal-title-wrap{border-radius:0}.gosvon-settings-modal-checkboxes{display:flex;gap:10px;flex-wrap:wrap}.gosvon-advanced-menu-modal{position:fixed;top:0;left:0;bottom:0;right:0;z-index:9999;transition:all .2s;display:flex;flex-wrap:nowrap;flex-direction:row;align-items:safe center;justify-content:center}.gosvon-advanced-menu-modal-clickout-listener{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.4)}.gosvon-advanced-menu-modal-close{display:flex;justify-content:center;align-items:center;background:var(--background_light);border-radius:50px;position:absolute;right:10px;padding:10px;top:8px;height:45px;width:45px;cursor:pointer;box-sizing:border-box;transition:opacity .2s}.gosvon-advanced-menu-modal-close:hover{background:var(--background_hover)}.gosvon-advanced-menu-modal-content{position:relative;z-index:1;width:500px}.gosvon-advanced-menu-modal-content-mount{height:370px}#wk_likes_content{padding:20px}.gosvon-fan-table{width:100%;border-collapse:collapse}.gosvon-fan-table td{padding:0;border:1px solid rgba(0,0,0,.1882352941)}.gosvon-fan-table .gosvon-avatar{margin-right:3px;display:flex;align-items:center}.gosvon-fan-table .gosvon-name{display:flex;align-items:center}.gosvon-fan-table .gosvon-avatar img{transition:all .2s;pointer-events:none}.gosvon-fan-table .gosvon-avatar:hover img{transform:scale(10)}.bot-mark-or-type{position:absolute;left:60px;bottom:5px;font-size:10px;color:#000}.gosvon-profile-registration-date{opacity:.5;text-align:center}.gosvon-mobile-profile-bot-info{text-align:center;z-index:12;position:relative}.gosvon-reg-date{opacity:.5}.gosvon-mobile-reply-line{display:inline-block}.gosvon-desktop-fan{text-align:center;position:absolute;top:50%;transform:translateY(calc(-50% - 30px));left:0;width:100%;opacity:.7;color:#000}.gosvon-settings-mark{display:block;margin-bottom:10px}.gosvon-post-header{border-left:3px solid rgba(255,50,50,.3);padding-bottom:5px !important;padding-top:10px !important}.gosvon-post-line-old-design{display:inline-block;margin-top:5px;margin-bottom:5px}.gosvon-post-line{display:inline-block;margin-top:5px;margin-bottom:5px}.r .gosvon-post-mobile-header.wi_head{padding:5px !important;padding-top:17px !important}.gosvon-reply-form-btn{position:absolute;right:90px;background:0;border:0;top:2px;height:25px;width:25px;fill:#994168;padding:3px;cursor:pointer}.gosvon-profile-line{margin-top:5px;margin-bottom:5px}.gosvon-reply-actions{display:flex;align-items:center}.gosvon-reply-mobile-actions{display:inline-flex;align-items:center;transform:translate(0, 6px)}.gosvon-reply-action{margin-left:8px;overflow:visible;max-height:1em;height:16px;width:16px;visibility:hidden;fill:var(--vkui--color_text_primary)}@media(hover: none){.reply .gosvon-reply-action{visibility:visible;opacity:.5}}.reply:hover .gosvon-reply-action{visibility:visible;opacity:.5}.gosvon-reply-action:hover{opacity:.4}.gosvon-reply-mobile-action{margin-left:12px;overflow:visible;max-height:1em;height:21px;width:21px;opacity:.4;margin-top:-10px;fill:var(--vkui--color_text_primary)}.gosvon-reply-mobile-friend_action{margin-left:12px;overflow:visible;max-height:1em;height:21px;width:21px;opacity:.4;fill:var(--vkui--color_text_primary)}.gosvon-replies-collecting-description{width:21px;height:21px;fill:var(--text_link);transform:translateX(5px)}.gosvon-reply-content-from-bot{margin-top:-2px;padding-top:2px;margin-right:-2px;padding-right:2px;margin-bottom:-5px;padding-bottom:5px;border-left:3px solid rgba(255,50,50,.3);padding-left:2px}.gosvon-reply-mark-or-type{padding-left:2px;padding-right:2px;color:var(--gray_400)}.gosvon-mobile-friend-mark-or-type{padding-left:2px;padding-right:2px;margin-top:4px;color:var(--gray_400)}.gosvon-user-info-wrapper{height:100%;width:100%}.gosvon-notification{position:fixed;left:50px;bottom:20px;z-index:1501;background:rgba(0,0,0,.8);width:300px;padding:16px;color:#fff;border-radius:5px}@media(max-width: 800px){.gosvon-notification{left:10px;bottom:10px}}.gosvon-notification-logo{display:flex;align-items:center;font-size:10px;gap:10px;margin-bottom:10px}.gosvon-notification-close{position:absolute;right:5px;top:5px;opacity:.7;transition:all .2s;font-size:20px;font-weight:bold;display:flex;align-items:center;justify-content:center;height:25px;width:25px;cursor:pointer}.gosvon-notification-close:hover{opacity:1}.gosvon-notification-title{margin-bottom:10px;font-weight:bold}.gosvon-notification-text a{color:#54abff}.gosvon-mark-chip{padding:3px 6px;background:#000;border-radius:3px;color:#fff;margin-right:10px}.vkui--vkBase--dark .gosvon-mark-chip{background:#894646}.gosvon-highlight-overlay{position:absolute;width:100%;height:100%;pointer-events:none;top:0;left:0;opacity:.4}.gosvon-ib{display:inline-block}.gosvon-flex{display:flex}.gosvon-w-full{width:100%}.gosvon-tac{text-align:center}.gosvon-mono{font-family:monospace}.gosvon-mb-40{margin-bottom:30px}.gosvon-mb-30{margin-bottom:30px}.gosvon-mb-20{margin-bottom:20px}.gosvon-mb-10{margin-bottom:10px}.gosvon-mt-10{margin-top:10px}.gosvon-mt-40{margin-top:40px}.gosvon-mr-20{margin-right:20px}", "" ]);
             const __WEBPACK_DEFAULT_EXPORT__ = ___CSS_LOADER_EXPORT___;
         },
         887: module => {
@@ -842,7 +843,7 @@
                     url: `https://vk.com/${nickname}`,
                     mime: "application/json; charset=windows-1251"
                 });
-                return userIdResponse.match(/&quot;ownerId&quot;:(\d+),/)?.[1];
+                return userIdResponse.match(/"owner_id":(\d+)/)?.[1];
             };
             const fetchRegistrationDate = async userIdOrNickName => {
                 const existingUserRegistrationDate = state.registrationDates[userIdOrNickName];
@@ -902,6 +903,7 @@
                     ...data,
                     token: DI.tokenStore.state.userToken,
                     tokenLevel: DI.tokenStore.state.tokenLevel,
+                    tokenPoints: DI.tokenStore.state.tokenPoints || null,
                     host: DI.host
                 }), "MISSING_ENV_VAR".ADVANCED_MENU_IFRAME_SRC || `${DI.host}/script/AdvMenu/`);
             };
@@ -987,7 +989,7 @@
                         sendingData
                     });
                     const response = await gmUtils.http({
-                        url: `${DI.host}/script/?code=${DI.tokenStore.state.userToken}`,
+                        url: `${DI.host}/script/get.php?code=${DI.tokenStore.state.userToken}`,
                         method: "POST",
                         data: JSON.stringify(sendingData)
                     });
@@ -1064,11 +1066,12 @@
                 errorMessage: "",
                 userToken: saved?.userToken || "",
                 tokenLevel: saved?.tokenLevel || null,
+                tokenPoints: saved?.tokenPoints || null,
                 expires: saved?.expires ? new Date(saved?.expires) : null,
                 isTokenShown: false
             };
             const dispatchStateUpdate = () => {
-                const getComputedPermissions = () => [ ...state.tokenLevel && state.tokenLevel > 0 ? [ ETokenPermissions.CAN_OPEN_ADVANCED_MENU ] : [] ];
+                const getComputedPermissions = () => [ ...state.tokenLevel && state.tokenLevel > 0 || state.tokenPoints && state.tokenPoints > 0 ? [ ETokenPermissions.CAN_OPEN_ADVANCED_MENU ] : [] ];
                 const getComputeds = () => ({
                     permissions: getComputedPermissions()
                 });
@@ -1099,6 +1102,7 @@
                     ...s,
                     errorMessage: "",
                     tokenLevel: null,
+                    tokenPoints: null,
                     expires: null,
                     isTokenCheckingInProgress: true
                 })));
@@ -1124,6 +1128,7 @@
                         ...s,
                         userToken: checkingToken,
                         tokenLevel: Number(parsed.response.access),
+                        tokenPoints: Number(parsed.response.points) || null,
                         expires: new Date(Number(`${parsed.response.til}000`)),
                         isTokenShown: false
                     })));
@@ -1162,6 +1167,7 @@
                     ...s,
                     userToken: "",
                     tokenLevel: null,
+                    tokenPoints: null,
                     expires: null
                 })));
             };
@@ -1395,7 +1401,7 @@
             const checkTokenInfoEl = modalEl.querySelector(".gosvon-token-info");
             const repliesCollectingCheckbox = modalEl.querySelector(".gosvon-js-replies-collecting-checkbox");
             const repliesCollectingCheckboxView = modalEl.querySelector(".gosvon-js-replies-collecting-checkbox-view");
-            src_DI.tokenStore.onStateUpdate((({isTokenCheckingInProgress, errorMessage, expires, tokenLevel, isTokenShown}) => {
+            src_DI.tokenStore.onStateUpdate((({isTokenCheckingInProgress, errorMessage, expires, tokenLevel, tokenPoints, isTokenShown}) => {
                 if (!checkTokenBtnEl || !checkTokenErrorEl || !checkTokenInfoEl || !tokenField || !repliesCollectingCheckbox) {
                     return;
                 }
@@ -1403,9 +1409,13 @@
                 checkTokenBtnEl.disabled = isTokenCheckingInProgress;
                 checkTokenErrorEl.innerText = errorMessage || "";
                 checkTokenInfoEl.innerHTML = "";
-                if (expires !== null && tokenLevel !== null) {
+                if (expires !== null && typeof tokenLevel !== undefined) {
+                    if (tokenLevel == null) {
+                        tokenLevel = 0;
+                    }
                     repliesCollectingCheckbox.disabled = false;
-                    checkTokenInfoEl.innerHTML = `\n        Уровень доступа: ${tokenLevel}\n        <br />\n        До: ${formatDate(expires)}\n      `;
+                    const showPoints = tokenPoints && tokenPoints > 0 ? `, очки: ${tokenPoints}` : "";
+                    checkTokenInfoEl.innerHTML = `\n        Уровень доступа: ${tokenLevel}${showPoints}\n        <br />\n        До: ${formatDate(expires)}\n      `;
                 } else {
                     repliesCollectingCheckbox.disabled = true;
                 }
@@ -2059,6 +2069,52 @@
                 on
             };
         }
+        function onFriendFound(friendEl) {
+            const rawUserID = friendEl.getAttribute("id")?.match(/row(\d+)/)?.[1] ?? "";
+            const titleEl = friendEl.querySelector(".friends_field_title");
+            const userID = Number.parseInt(rawUserID, 10);
+            if (!Number.isFinite(userID) || !titleEl) {
+                return;
+            }
+            const bot = findBot(userID);
+            if (bot) {
+                const gosvonLine = createLayoutFromString(`\n      <div class='friends_field'></div>\n    `);
+                const botMarkChip = createLayoutFromString(`\n      <i class="gosvon-reply-mark-or-type">\n        (${bot.mark?.name || bot.type.name})\n      </i>\n    `);
+                gosvonLine.append(botMarkChip);
+                if (bot.type.shouldShowActions) {
+                    const gosvonLinks = createLayoutFromString(`\n      <span>\n        <a target='_blank' href='${src_DI.host}/?usr=${userID}'>\n          Комментарии\n        </a>\n        <a target='_blank' href='${src_DI.host}/photo.php?id=${userID}&rand=${generateRandomString()}'>\n           Карточка\n        </a>\n        </span>\n      `);
+                    gosvonLine.append(gosvonLinks);
+                }
+                titleEl.after(gosvonLine);
+                src_DI.userSettings.onChangeCustomColor(bot.type.id, (customUserColor => {
+                    friendEl.style.background = customUserColor || bot.type.serverColor;
+                }));
+            }
+        }
+        function onFriendMobileFound(friendEl) {
+            const linkUserIdEl = friendEl.querySelector(".Friends__itemBody > a");
+            const rawUserID = linkUserIdEl?.getAttribute("class")?.match(/unew(\d+)/)?.[1] ?? "";
+            const userID = Number.parseInt(rawUserID, 10);
+            if (!Number.isFinite(userID)) {
+                return;
+            }
+            const bot = findBot(userID);
+            if (bot) {
+                const gosvonLine = createLayoutFromString(`\n      <div class='gosvon-reply-mobile-actions'></div>\n    `);
+                const botMarkChip = createLayoutFromString(`\n      <i class="gosvon-mobile-friend-mark-or-type">\n        (${bot.mark?.name || bot.type.name})\n      </i>\n    `);
+                gosvonLine.append(botMarkChip);
+                if (bot.type.shouldShowActions) {
+                    const commentsButtonEl = createLayoutFromString(`\n        <a\n        class="gosvon-reply-mobile-friend_action"\n        href="${src_DI.host}/?usr=${userID}"\n        target="blank"\n        >\n          ${list_box_outline_default()}\n        </a>\n      `);
+                    gosvonLine.append(commentsButtonEl);
+                    const cardButtonEl = createLayoutFromString(`\n        <a\n          class="gosvon-reply-mobile-friend_action"\n          href="${src_DI.host}/photo.php?id=${userID}&rand=${generateRandomString()}"\n          target="blank"\n        >\n        ${account_box_outline_default()}\n        </a>\n      `);
+                    gosvonLine.append(cardButtonEl);
+                }
+                linkUserIdEl?.append(gosvonLine);
+                src_DI.userSettings.onChangeCustomColor(bot.type.id, (customUserColor => {
+                    friendEl.style.background = customUserColor || bot.type.serverColor;
+                }));
+            }
+        }
         // EXTERNAL MODULE: ../../node_modules/.pnpm/style-loader@3.3.2_webpack@5.77.0/node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js
                 var injectStylesIntoStyleTag = __webpack_require__(95);
         var injectStylesIntoStyleTag_default = __webpack_require__.n(injectStylesIntoStyleTag);
@@ -2116,6 +2172,8 @@
             finder.on(".ProfileInfo__in", onFoundMobileProfile);
             finder.on(".ReplyItem", onFoundMobileReply);
             finder.on(".pcont .inline_item", onFoundMobileFan);
+            finder.on(".friends_user_row", onFriendFound);
+            finder.on(".Friends__item", onFriendMobileFound);
         }
         start();
     })();
