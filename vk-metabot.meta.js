@@ -1,20 +1,20 @@
 // ==UserScript==
-// @name         GosVon Marking for VK
+// @name         Ботнадзор (botnadzor.org)
 // @namespace    vk-metabot-user-js
-// @description  Подсветка служебных страниц вконтакте.
-// @version      3.06
+// @description  Подсветка ботов в VK
+// @version      4.0
 // @homepageURL  https://vk.com/club187686148
 // @match        https://*.vk.com/*
 // @match        *://web.archive.org/*://*vk.com/*
 // @exclude      *://queuev4.vk.com/*
-// @connect      gosvon.net
-// @connect      api.gosvon.net
-// @connect      gosvon.github.io
+// @connect      botnadzor.org
+// @connect      api.botnadzor.org
+// @connect      botnadzor.github.io
 // @connect      *.vercel.app
 // @connect      *.netlify.app
-// @updateURL    https://raw.githubusercontent.com/gosvon/gosvon/user-script/vk-metabot.meta.js
-// @downloadURL  https://raw.githubusercontent.com/gosvon/gosvon/user-script/vk-metabot.user.js
-// @update       https://raw.githubusercontent.com/gosvon/gosvon/user-script/vk-metabot.user.js
+// @updateURL    https://raw.githubusercontent.com/botnadzor/user-script/update/vk-metabot.meta.js
+// @downloadURL  https://raw.githubusercontent.com/botnadzor/user-script/update/vk-metabot.user.js
+// @update       https://raw.githubusercontent.com/botnadzor/user-script/update/vk-metabot.user.js
 // @grant        GM_xmlhttpRequest
 // @grant        GM.xmlHttpRequest
 // @grant        GM_setValue
