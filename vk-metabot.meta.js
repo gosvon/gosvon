@@ -2,7 +2,7 @@
 // @name         Ботнадзор (botnadzor.org)
 // @namespace    vk-metabot-user-js
 // @description  Подсветка ботов в VK
-// @version      4.1
+// @version      4.1.1
 // @homepageURL  https://vk.com/club187686148
 // @icon         https://botnadzor.org/favicon.ico
 // @match        https://*.vk.com/*
